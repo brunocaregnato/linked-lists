@@ -8,4 +8,4 @@ EN Here is a small project by the University of Caxias do Sul using linked lists
 
 Alunos/Students: Bruno e Venicius
 
-Github Venicius: https://github.com/brunocaregnato
+Github Bruno: https://github.com/brunocaregnato
