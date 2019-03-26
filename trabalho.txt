@@ -1,0 +1,22 @@
+O objetivo do trabalho é desenvolver um programa que gerencie uma lista duplamente encadeada de filmes e uma lista duplamente encadeada de atores, conforme mostrado nas duas páginas a seguir. Para cada ator será mantida uma lista encadeada dos filmes de que o ator já participou, em que cada nodo conterá um apontador para o filme correspondente na lista de filmes.
+Da mesma forma, para cada filme será mantida uma lista simplesmente encadeada dos atores que participaram do filme, em que cada nodo conterá um apontador para o nodo correspondente ao ator na lista de atores.
+
+Para cada filme serão guardados seu nome, ano e diretor. Para cada ator, será mantido somente o seu nome.
+
+Os dados para as listas serão carregados do arquivo resumo.txt, em que cada linha terá os dados de um filme no seguinte formato:
+	<Nome do filme>,<ano>,<diretor>,<lista de atores>
+
+O campo de ano e diretor são opcionais. Na sua ausência, ocorrerão duas vírgulas em sequência. Ex:
+	the ninth gate,1999,,johnny depp,frank langella,emmanuelle seigner,lena olin
+	inferno na torre,,,paul newman,steve mcqueen,faye dunaway,fred astaire,richard chamberlain,robert wagner
+
+A lista de atores pode não conter nenhum nome. Nesse caso a linha termina no diretor. Se o diretor não existir, a linha termina na vírgula antes do diretor. Ex:
+	strangers on a train (pacto sinistro),1951,alfred hitchcock
+
+Opcionalmente, junto ao nome do ator pode aparecer o nome do personagem que ele interpretou no filme. Quando ocorre, o nome do personagem aparece ao lado do nome do ator separado por “=”;. Ex:
+	matrix,1999,lana wachowski,dir:lilly wachowski,keanu reeves=neo,laurence fishburne=morpheus,carrie-anne
+	moss=trinity,hugo weaving=agent smith
+
+Se o filme tiver mais de um diretor, os diretores a partir do segundo diretor aparecerão na lista de atores precedidos do prefixo “Dir:”. Ex:
+	matrix,1999,lana wachowski,dir:lilly wachowski,keanu reeves=neo,laurence fishburne=morpheus,carrie-anne
+	moss=trinity,hugo weaving=agent smith
